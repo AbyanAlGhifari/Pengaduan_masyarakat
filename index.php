@@ -55,12 +55,35 @@ if (isset($_POST['login'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css "href="dist/css/bootstrap.min.css">
 </head>
 <body>
-    <form method="POST">
-        <input type="text" name="username" placeholder="username" required/>
-        <input type="password" name="password" placeholder="password" required/>
-        <input type="submit" name="login" value="login"/>
-    </form>
+    <nav class="navbar">
+
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center align-center">
+            <div class="card col-lg-6">
+                <div class="card-header">
+                    <center>Login Masyarakat</center>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="username" placeholder="username" class="form-control" required/>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" name="password" placeholder="password" class="form-control" required/>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" name="login" value="login" class="form-control btn btn-primary"/>
+                        </div>
+                    </form>
+                    <a href="/pengaduan_masyarakat/masyarakat/registrasi.php" class="nav-link">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
 </html>

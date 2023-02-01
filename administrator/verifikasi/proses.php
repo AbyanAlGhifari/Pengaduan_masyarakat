@@ -39,6 +39,7 @@ if (isset($_GET['id'])) {
                 <th>Foto Penunjang</th>
                 <th>Isi Aduan</th>
                 <th>Status</th>
+                <th>Tanggapan</th>
                 <th>Verifikasi</th>
             </tr>
         </thead>
@@ -65,6 +66,13 @@ if (isset($_GET['id'])) {
                             <td>$data[isi_laporan]</td>
                         <td>
                             $status
+                        </td>
+                        <td>
+                            <a href=/pengaduan_masyarakat/administrator/tanggapan.php?id=$data[id_pengaduan]>
+                                <button>
+                                    Telah di Proses
+                                </button>
+                            </a>
                         </td>
                         <td>
                             <a href=?id=$data[id_pengaduan]>

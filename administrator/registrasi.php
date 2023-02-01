@@ -35,19 +35,55 @@ if (isset($_POST['registrasi'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi Petugas</title>
+    <title>Registrasi Admin</title>
+    <link rel="stylesheet" type="text/css " href="../dist/css/bootstrap.min.css">
 </head>
 <body>
-    <form method="POST">
-        <input type="text" name="nama_petugas" placeholder="Nama Asli Anda" required>
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="password" required>
-        <input type="text" name="telp" placeholder="Nomor Telepon" required>
-        <select name="level">
-            <option value="petugas">Petugas</option>
-            <option value="admin">Admin</option>
-        </select>
-        <input type="submit" name="registrasi" value="Registrasi">
-    </form>   
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/pengaduan_masyarakat/administrator/index.php" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center align-middle">
+            <div class="card col-lg-6">
+                <div class="card-header">
+                    <center>
+                        <h2>Registrasi Admin Atau Petuags</h2>
+                    </center>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="nama_petugas" placeholder="Nama Asli Anda" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="username" placeholder="Username" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" name="password" placeholder="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="telp" placeholder="Nomor Telepon" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <select name="level" class="form-control">
+                                <option value="petugas">Petugas</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" name="registrasi" value="Registrasi" class="form-control btn btn-success">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div> 
 </body>
+<script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
 </html>
