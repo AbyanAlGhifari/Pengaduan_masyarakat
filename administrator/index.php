@@ -81,7 +81,6 @@ if (isset($_POST['login'])) {
                             <input type="submit" name="login" value="login" class="form-control btn btn-success"/>
                         </div>
                     </form>
-                    <a href="/pengaduan_masyarakat/administrator/registrasi.php" class="nav-link">Registrasi</a>
                 </div>
             </div>
         </div>

@@ -40,10 +40,13 @@ $getData = mysqli_fetch_all($execQuery, MYSQLI_ASSOC);
                 <li class="nav-item">
                     <a href="/pengaduan_masyarakat/administrator/generate-laporan.php" class="nav-link">Generate Laporan</a>
                 </li>
+                <li class="nav-item">
+                    <a href="/pengaduan_masyarakat/administrator/registrasi.php" class="nav-link">Registrasi</a>
+                </li>
             </ul>
             <div>
                 <?php
-                    echo $_SESSION['nama'].'<a href="/pengaduan_masyarakat/logout.php">Logout</a>'
+                    echo $_SESSION['nama'].' '.'<a href="/pengaduan_masyarakat/logout.php">Logout</a>'
                 ?>
             </div>
         </div>

@@ -58,7 +58,7 @@ if (isset($_POST['adukan'])) {
             </ul>
             <div>
                 <?php
-                    echo $_SESSION['nama'].'<a href="/pengaduan_masyarakat/logout.php">Logout</a>';
+                    echo $_SESSION['nama'].' '.'<a href="/pengaduan_masyarakat/logout.php">Logout</a>';
                 ?>
             </div>
         </div>

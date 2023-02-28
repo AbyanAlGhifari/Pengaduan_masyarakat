@@ -79,7 +79,10 @@ if (isset($_POST['login'])) {
                             <input type="submit" name="login" value="login" class="form-control btn btn-primary"/>
                         </div>
                     </form>
-                    <a href="/pengaduan_masyarakat/masyarakat/registrasi.php" class="nav-link">Daftar</a>
+                    <div class="d-flex flex-row justify-content-between">
+                            <a href="/pengaduan_masyarakat/masyarakat/registrasi.php" class="nav-link">Daftar</a>
+                            <a href="/pengaduan_masyarakat/administrator/index.php" class="nav-link">Admin</a>
+                    </div>
                 </div>
             </div>
         </div>
